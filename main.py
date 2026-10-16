@@ -56,12 +56,12 @@ class Player(Entity):
 
         if self.moving_left:
             self.x -= self.speed * dt
-        elif self.moving_right:
+        if self.moving_right:
             self.x += self.speed * dt
 
         if self.moving_down:
             self.y += self.speed * dt
-        elif self.moving_up:
+        if self.moving_up:
             self.y -= self.speed * dt 
 
 
